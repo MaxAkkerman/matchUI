@@ -1,6 +1,6 @@
 import {
     AccordionIcon,
-    AccordionPanel as AccordionPanelChakra, Flex, Grid, HStack, Stack, Text, useMediaQuery
+    AccordionPanel as AccordionPanelChakra, Flex, Grid, HStack, Text, useMediaQuery
 } from '@chakra-ui/react'
 import {IPlayer} from "../../app/services/matches";
 import {DividerIcon} from "../../app/assets";
