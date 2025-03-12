@@ -6,7 +6,7 @@ export const TextTheme = defineStyleConfig({
         lineHeight: '100%',
         letterSpacing: '0',
         color: 'white.100',
-        fontSize: '16px'
+        fontSize: { base: '12px', sm: '14px', md: '16px' }
     },
     sizes: {
         sm: {

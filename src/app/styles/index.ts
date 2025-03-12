@@ -4,6 +4,12 @@ import {TextTheme} from "./Text";
 import {AccordionTheme} from "./Accordion";
 import {BadgeTheme} from "./Badge";
 
+const breakpoints = {
+    base: '0px',
+    sm: '480px',
+    md: '768px',
+}
+
 export const theme = extendTheme({
     components: {
         Button: ButtonTheme,
@@ -11,6 +17,7 @@ export const theme = extendTheme({
         Accordion: AccordionTheme,
         Badge: BadgeTheme,
     },
+    breakpoints,
     fonts: {
         body: `'Inter', sans-serif`,
     },
@@ -23,7 +30,11 @@ export const theme = extendTheme({
                 background: 'darken.50',
                 width: '100%',
                 height: '100%',
-                padding: '32px',
+                padding: {
+                    base: '12px',
+                    sm: '24px',
+                    md: '32px',
+                },
             }
         })
     },

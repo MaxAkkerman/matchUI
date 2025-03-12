@@ -30,14 +30,14 @@ export const AccordionButton = ({
                                     awayTeamName
                                 }: IAccordionButton) => {
     return (
-        <AccordionButtonChakra bg='darken.150' >
+        <AccordionButtonChakra bg='darken.150'>
             <Flex justifyContent='space-between' minHeight='55px' width='100%'>
                 <HStack>
                     <TeamIcon/>
                     <Text>{homeTeamName}</Text>
                 </HStack>
                 <VStack justifyContent='space-between'>
-                    <Text size='md'>{homeScore} : {awayScore}</Text>
+                    <Text>{homeScore} : {awayScore}</Text>
                     <Badge color={StatusSchema[status].color}>
                         <Text size='sm'>{StatusSchema[status].label}</Text>
                     </Badge>

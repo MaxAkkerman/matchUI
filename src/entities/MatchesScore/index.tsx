@@ -15,7 +15,7 @@ export const MatchesScore = ({matches}: IAccordion) => {
         <AccordionChakra allowMultiple gap='20px'>
             {matches.map(({awayScore, homeScore, status, homeTeam, awayTeam}) => {
                 return (
-                    <AccordionItem bg='darken.150'>
+                    <AccordionItem key={`${homeTeam.name}-${awayScore}-${homeScore}-${awayTeam.name}`} bg='darken.150'>
                         <AccordionButton
                             awayScore={awayScore}
                             homeScore={homeScore}
